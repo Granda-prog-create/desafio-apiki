@@ -1,6 +1,6 @@
 from forex_python.converter import CurrencyCodes, CurrencyRates
 c = CurrencyRates()
-cd = CurrencyCodes() 
+cd = CurrencyCodes()
 
 
 
@@ -74,6 +74,9 @@ while True:
                     '\nOUTRO, codigo da moeda de escolha (3 digitos):').upper()
                 print('cod de escolha:', cod_moeda_cambio)
                 break
+            else:
+              print('Digite apenas 1, 2 ou 3')
+              
         except:
             print(
                 "\033[1;31m Entrada inválida. Selecione as opções disponíveis\33[0;0m")
